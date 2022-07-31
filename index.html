@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="project.css">
+<body>
+<section>
+    <h1>My Projects</h1>
+    <div class="container">
+      <div class="item" id="1">
+        <img src="tribute.JPG" alt="">
+        <!-- <button class="show">Click to view description</button> -->
+        <button type="button" class="collapsible">View Description</button>
+     <div class="content"> <!--<div class="text"> -->
+          <h3>Tribute Page</h4>
+          <p>PS4 tribute page to show appreciation for game developers.</p>
+          <a type="button" href="https://ighellache.github.io/tributepage/">Click here to view</a>
+        </div>
+        <!-- <button type="button" href="https://ighellache.github.io/tributepage/" class="button">Learn More</button> -->
+      </div>
+
+      <div class="item" id="2">
+        <img src="me.JPG" alt="">
+        <button type="button" class="collapsible">View Description</button>
+     <div class="content">
+          <h3>Portfolio</h4>
+          <p>A portfolio website created to introduce myself.</p>
+          <a type="button" href="https://ighellache.github.io/">Click here to view</a>
+        </div>
+        <!-- <button type="button" href="https://ighellache.github.io/" class="button">Learn More</button> -->
+      </div>
+
+      <div class="item" id="3">
+        <img src="comments.JPG" alt="">
+        <button type="button" class="collapsible">View Description</button>
+        <div class="content">
+            <h3>Review Section</h4>
+          <p>Review page which allows users to enter the following details: name, email and comment.</p>
+          <a type="button" href="https://ighellache.github.io/commentbox/">Click here to view</a>
+          </div>
+          <!-- <button type="button" href="https://ighellache.github.io/commentbox/" class="button">Learn More</button> -->
+      </div>
+
+      <div class="item" id="4">
+        <img src="fruit.JPG" alt="">
+        <button type="button" class="collapsible">View Description</button>
+     <div class="content">
+          <h3>Fruit Shop</h4>
+          <p>Fruit shop which uses javascript to add, remove and purchase fruit to a shopping cart.</p>
+          <a type="button" href="https://ighellache.github.io/fruitshop/">Click here to view</a>
+        </div>
+        
+      </div>
+
+      <div class="item" id="5">
+        <img src="quiz.JPG" alt="">
+        <button type="button" class="collapsible">View Description</button>
+     <div class="content">
+          <h3>Fun quiz</h4>
+          <p>Fun quiz to test zoo animal knowledge - inspired by my zoo animalkeeper experience.</p>
+          <a href="https://ighellache.github.io/myfeature/" >Click here to view</a>
+        </div>
+         
+      </div>
+</section>
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
